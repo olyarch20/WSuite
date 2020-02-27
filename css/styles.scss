@@ -1,0 +1,360 @@
+$primaryRed: #DE4A4F;
+$secondaryRed: #B5383C;
+$white: #ffffff;
+$btnSecondaryColor: #8d8d8d;
+$btnBgSecondaryColor: #f9fafc;
+$lightBlue: #69a2f0;
+$font_stack: 'Open Sans', sans-serif;
+$transparent: transparent;
+$sliderBoxShadow: rgba(46, 1, 1, 1);
+$servicesImgShadow: rgba(238, 241, 245, 1);
+$suiteColor: #404040;
+$bgFooter: #f4f4f4;
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    //overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, span, p {
+    font-family: $font_stack;
+}
+
+.ro {
+    border: 1px solid red;
+}
+
+.bar {
+    font-size: large;
+    font-weight: bolder;
+    color: $primaryRed;
+    padding-left: 5px;
+}
+
+.header-logo {
+    height: 31px;
+}
+
+.nav-link {
+    margin: 15px;
+    color: #868686;
+}
+
+.nav-item-active {
+    color: $primaryRed;
+}
+
+.navbar-collapse {
+    position: relative;
+}
+
+.header-suite {
+    color: $suiteColor;
+    font-weight: bold;
+}
+
+.navbar-header {
+    margin-left: 100px;
+}
+
+.navbar-nav {
+    margin-right: 150px;
+}
+
+.background {
+    background: url("assets/img/bg.png") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    padding: 50px;
+}
+
+.info-container {
+    border: 15px solid;
+    padding: 50px;
+    border-bottom: 0;
+    border-image: linear-gradient(to bottom, white, transparent) 1;
+}
+
+.btn {
+    border-radius: 0;
+    width: 140px;
+    font-family: $font_stack;
+    font-size: 14px;
+}
+
+.btn-start {
+    background-color: $lightBlue;
+    color: $white;
+    width: 140px!important;
+}
+
+.btn-primary {
+    background-color: $primaryRed;
+    color: $white;
+    border: 1px solid $primaryRed;
+
+    &:hover {
+        background-color: $white;
+        color: $primaryRed;
+    }
+}
+
+.btn-secondary {
+    color: $btnSecondaryColor;
+    background-color: $white;
+}
+
+.btn-free-trial {
+    color: $secondaryRed;
+    font-weight: bold;
+}
+
+.w-suite-title, .w-suite-description {
+    color: $white;
+}
+
+.message-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.message-icon-container {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.start-now {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.start-now-text {
+    color: $white;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider-info {
+    -webkit-box-shadow: -1px 3px 11px -1px $sliderBoxShadow;
+    -moz-box-shadow: -1px 3px 11px -1px $sliderBoxShadow;
+    box-shadow: -1px 3px 11px -1px $sliderBoxShadow;
+    background-color: #bf3337;
+    position: absolute;
+    max-width: 700px;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+}
+
+.slider-item-title {
+    color: $white;
+    font-size: 22px;
+}
+
+.slider-item-description {
+    color: $white;
+    font-size: 16px;
+}
+
+.slider-item {
+    text-align: center;
+}
+
+.carousel-inner {
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    li {
+        border-radius: 12px;
+        width: 12px;
+        height: 12px;
+        background-color: $suiteColor;
+        cursor: pointer;
+    }
+}
+
+.services {
+    height: 100vh;
+    background-color: $btnBgSecondaryColor;
+    display: flex;
+    align-items: center;
+}
+
+.w-img {
+    width: 100% !important;
+    -webkit-box-shadow: -4px 4px 12px 10px $servicesImgShadow;
+    -moz-box-shadow: -4px 4px 12px 10px $servicesImgShadow;
+    box-shadow: -4px 4px 12px 10px $servicesImgShadow;
+}
+
+#contact {
+    position: relative;
+}
+
+.start-free-trial {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.contact-title {
+    padding: 0 15px;
+    font-size: 32px !important;
+}
+
+.contact-text {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.contact-bar {
+    font-size: 22px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    color: #707070;
+    //background-color: $background_color_8;
+    font-weight: normal;
+    border-top-color: $transparent;
+    border-left-color: $transparent;
+    border-right-color: $transparent;
+    border-bottom: 1px solid $white;
+    font-family: $font_stack;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+textarea {
+    height: 100%;
+}
+
+.send-now {
+    background-color: $primaryRed;
+    height: 50px;
+    width: 160px;
+    font-family: $font_stack;
+    font-size: smaller;
+    color: $white;
+}
+
+.is-valid {
+    border-bottom: 1px solid green !important;
+}
+
+.is-invalid {
+    border-bottom: 1px solid #DE4A4F !important;
+}
+
+.page-footer {
+    background-color: $bgFooter;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-options {
+    margin-right: 150px;
+
+    span {
+        color: #a0a0a0;
+        margin-right: 6px;
+    }
+}
+
+.footer-white {
+    color: #868686;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        border: 0;
+    }
+    .navbar-header {
+        margin-left: 0;
+    }
+    .btn {
+        width: 100px;
+    }
+
+    .img-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-options {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .background {
+        padding: 0;
+    }
+    .info-container {
+        border: 0;
+    }
+    .slider-container {
+        margin-top: 100px;
+    }
+    .start-now {
+        display: none;
+    }
+    .w-img {
+        margin-top: 50px;
+    }
+    .page-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-options {
+        margin-top: 30px;
+
+        span {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        width: 100px;
+    }
+    .ml-5 {
+        margin-left: 9px;
+    }
+}
+
+@media (min-width: 320px) {
+    .slider-info {
+        width: 100%;
+    }
+}
